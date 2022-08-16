@@ -13,7 +13,7 @@
   import requests from '../../helpers/requests';
 
   export default {
-    name: 'Swagger',
+    name: 'swagger',
     props: {
       document: { type: String, default: '' }
     },

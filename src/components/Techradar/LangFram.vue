@@ -10,7 +10,7 @@
 <script>
 
   export default {
-    name: 'TRTechniques',
+    name: 't-r-techniques',
     props: {
     },
     data() {

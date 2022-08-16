@@ -68,7 +68,7 @@
   import Docs from './tabs/Docs.vue';
 
   export default {
-    name: 'ArchComponent',
+    name: 'arch-component',
     components: {
       Docs,
       ComponentsMindmap,

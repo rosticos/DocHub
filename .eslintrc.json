@@ -1,5 +1,6 @@
 {
 	"env": {
+		"es6": true,
 		"browser": true,
 		"node": true,
 		"jest": true
@@ -9,6 +10,7 @@
 		"plugin:vue/recommended"
 	],
 	"parserOptions": {
+		"parser": "@babel/eslint-parser",
 		"ecmaVersion": 10,
 		"sourceType": "module"
 	},
@@ -61,6 +63,7 @@
 		"vue/no-v-html": "off",
 		"vue/no-mutating-props": "off",
 		"vue/arrow-spacing": "error",
+		"vue/component-definition-name-casing": ["error", "kebab-case"],
 		"vue/component-name-in-template-casing": [
 			"error",
 			"kebab-case",

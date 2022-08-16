@@ -9,7 +9,7 @@
   import requests from '../../helpers/requests';
 
   export default {
-    name: 'DocPlantUML',
+    name: 'doc-plant-u-m-l',
     components: {
       Plantuml
     },

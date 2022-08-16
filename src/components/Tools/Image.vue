@@ -8,7 +8,7 @@
   import requests from '../../helpers/requests';
 
   export default {
-    name: 'Image',
+    name: 'image',
     props: {
       src: { type: String, default: '' },
       baseURI: { type: String, default: '' }

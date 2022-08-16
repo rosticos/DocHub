@@ -30,7 +30,7 @@
   import CatalogSelector from './CatalogSelector';
 
   export default {
-    name: 'SourceSelector',
+    name: 'source-selector',
     components: {
       CatalogSelector,
       GitSelector

@@ -32,7 +32,7 @@
   import Radar from './Radar';
 
   export default {
-    name: 'TRTechniques',
+    name: 't-r-techniques',
     components:{
       Radar
     },

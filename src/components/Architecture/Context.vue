@@ -27,7 +27,7 @@
   import datasets from '../../helpers/datasets';
 
   export default {
-    name: 'Context',
+    name: 'context',
     components: {
       Schema,
       Plantuml,

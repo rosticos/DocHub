@@ -60,7 +60,7 @@
   import SwaggerUI from 'swagger-ui';
 
   export default {
-    name: 'Swagger',
+    name: 'swagger',
     components: {
       CodeDiffViewer
     },

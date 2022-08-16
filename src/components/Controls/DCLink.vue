@@ -7,7 +7,7 @@
 <script>
 
   export default {
-    name: 'DCLink',
+    name: 'd-c-link',
     props: {
       href: { type: String, default: '' },
       target: { type: String, default: '' }

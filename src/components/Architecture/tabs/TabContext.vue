@@ -39,7 +39,7 @@
   import query from '../../../manifest/query';
 
   export default {
-    name: 'TabContexts',
+    name: 'tab-contexts',
     components: {
       Schema
     },

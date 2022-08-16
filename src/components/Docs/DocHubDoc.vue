@@ -4,7 +4,7 @@
     <template v-else>
       <swagger v-if="isContract" v-bind:document="document" />
       <plantuml v-if="isPlantUML" v-bind:document="document" />
-      <doc-markdown v-if="isMarkdown" v-bind:document="document" />
+      <!-- <doc-markdown v-if="isMarkdown" v-bind:document="document" /> -->
       <doc-table v-if="isTable" v-bind:document="document" />
     </template>
   </div>
@@ -14,16 +14,16 @@
 
   import Swagger from './DocSwagger';
   import Plantuml from './DocPlantUML';
-  import DocMarkdown from './DocMarkdown';
+  // import DocMarkdown from './DocMarkdown';
   import DocTable from './DocTable.vue';
   import Empty from '../Controls/Empty.vue';
 
   export default {
-    name: 'Document',
+    name: 'document',
     components: {
       Plantuml,
       Swagger,
-      DocMarkdown,
+      // DocMarkdown,
       DocTable,
       Empty
     },

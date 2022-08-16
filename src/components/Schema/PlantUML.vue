@@ -43,19 +43,21 @@
 <script>
 
   import axios from 'axios';
-  import plantUML from '../../helpers/plantuml';
+  import PlantUML from '../../helpers/plantuml';
   import requests from '../../helpers/requests';
   import copyToClipboard from '../../helpers/clipboard';
 
   const EVENT_COPY_SOURCE_TO_CLIPBOARD = 'copysource';
 
   export default {
-    name: 'PlantUML',
     props: {
       uml: { type: String, default: '' },         // PlantUML диаграмма
       postrender: { type: Function, default: () => {} }, // POST обработчик
       sourceAvailable: { type: Boolean, default: false }
     },
+    emits: [
+      EVENT_COPY_SOURCE_TO_CLIPBOARD // Копирование источника данных
+    ],
     data() {
       return {
         menu: { // Контекстное меню
@@ -264,7 +266,7 @@
         this.$nextTick(() => {
           const request= window.$IDE_PLUGIN
             ? window.$PAPI.renderPlantUML(this.uml) 
-            : axios({url: plantUML.svgURL(this.uml)});
+            : axios({url: PlantUML.svgURL(this.uml)});
           request.then((response) => {
             this.svg = response.data.toString();
             this.isLoading = false;
@@ -322,25 +324,17 @@
           this.$nextTick(() => document.body.removeChild(link));
         }
       }
-    },
-    emits: [
-      EVENT_COPY_SOURCE_TO_CLIPBOARD // Копирование источника данных
-    ]
+    }
   };
 </script>
 
 <style>
+  .plantuml-schema {
+    width: 100%;  
+  }
 
-.plantuml-place {
-}
-
-.plantuml-schema {
-  width: 100%;  
-}
-
-.plantuml-schema svg {
-  width: 100%;
-  height: auto;
-}
-
+  .plantuml-schema svg {
+    width: 100%;
+    height: auto;
+  }
 </style>

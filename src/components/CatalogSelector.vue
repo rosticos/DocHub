@@ -12,7 +12,7 @@
 
 <script>
   export default {
-    name: 'Catalog',
+    name: 'catalog',
     props: {
       value: { type: String, default: '' }
     },

@@ -37,7 +37,7 @@
   import query from '../manifest/query';
 
   export default {
-    name: 'Menu',
+    name: 'menu',
     data() {
       return {
         // Открытые пункты меню

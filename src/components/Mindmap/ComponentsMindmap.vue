@@ -9,7 +9,7 @@
   import jsonata from 'jsonata';
 
   export default {
-    name: 'ComponentsMindMap',
+    name: 'components-mind-map',
     components: {
       'plantuml' : PlantUML
     },

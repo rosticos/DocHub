@@ -3,10 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
 
 // const fs = require('fs');
-
+// const { vscodeConfig } = require('./configs/vscode.config.js');
+const vscodeConfig = require('./configs/vscode.config.js');
 
 // Дефолтная конфигурация dev-сервера
-let config = {
+const config = {
 	runtimeCompiler: true,
 	devServer: {
 		/*
@@ -43,4 +44,9 @@ if(fs.lstatSync(__dirname + '/certs').isDirectory()) {
     }
 }
 */
-module.exports = config;
+
+if (process.env.BUILD_VSCODE_EXTENSION) {
+	module.exports = vscodeConfig;
+} else {
+	module.exports = config;
+}

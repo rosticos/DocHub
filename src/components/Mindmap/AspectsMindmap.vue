@@ -8,7 +8,7 @@
   import query from '../../manifest/query';
 
   export default {
-    name: 'AspectsMindMap',
+    name: 'aspects-mind-map',
     components: {
       'plantuml' : PlantUML
     },

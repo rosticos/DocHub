@@ -16,7 +16,7 @@
   import requests from '../../helpers/requests';
 
   export default {
-    name: 'DocHubObject',
+    name: 'doc-hub-object',
     props: {
       src: { type: String, default: '' },
       alt: { type: String, default: '' },

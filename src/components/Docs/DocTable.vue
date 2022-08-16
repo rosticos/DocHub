@@ -33,7 +33,7 @@
             </td>
           </tr>  
         </template>
-        <template v-slot:no-data>
+        <template #no-data>
           <v-alert v-bind:value="true" color="error" icon="warning">
             Данных нет :(
           </v-alert>
@@ -55,7 +55,7 @@
   import DCLink from '../Controls/DCLink.vue';
 
   export default {
-    name: 'DocTable',
+    name: 'doc-table',
     components: { 
       DCLink 
     },

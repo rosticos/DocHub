@@ -97,7 +97,7 @@
   import Mixin from '../mixin';
 
   export default {
-    name: 'Validators',
+    name: 'validators',
     mixins: [Mixin],
     props: {
       subject: { type: String, default: '' }

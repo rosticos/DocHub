@@ -17,7 +17,7 @@
   import query from '../../../manifest/query';
 
   export default {
-    name: 'Docs',
+    name: 'docs',
     components: {
       Tree
     },

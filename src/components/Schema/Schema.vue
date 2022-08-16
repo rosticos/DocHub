@@ -16,7 +16,7 @@
   import copyToClipboard from '../../helpers/clipboard';
 
   export default {
-    name: 'Schema',
+    name: 'schema',
     components: {
       'plantuml' : PlantUML
     },

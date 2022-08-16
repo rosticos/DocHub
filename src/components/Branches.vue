@@ -21,7 +21,7 @@
   const axios = require('axios');
 
   export default {
-    name: 'Branches',
+    name: 'branches',
     props: {
       project: { type: Number, default: 0 },
       value: { type: Object, default: () => ({}) }

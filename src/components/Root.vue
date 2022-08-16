@@ -83,7 +83,7 @@
   const defaultDrawerSize = 300;
 
   export default {
-    name: 'Root',
+    name: 'root',
     components: {
       MenuComponent,
       PluginInit,

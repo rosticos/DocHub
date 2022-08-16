@@ -30,7 +30,7 @@
   import dateFormat from 'dateformat';
 
   export default {
-    name: 'LastChanges',
+    name: 'last-changes',
     data() {
       return {
       };

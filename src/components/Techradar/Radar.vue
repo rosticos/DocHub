@@ -54,7 +54,7 @@
   import crc16 from '../../helpers/crc16';
 
   export default {
-    name: 'TRTechniques',
+    name: 't-r-techniques',
     props: {
       section: { type: String, default: '' }
     },

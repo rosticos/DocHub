@@ -32,7 +32,7 @@
   import DocMarkdownObject from './DocHubObject';
 
   export default {
-    name: 'DocMarkdown',
+    name: 'doc-markdown',
     components: {
       markdown,
       finalMarkdown: {

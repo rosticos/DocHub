@@ -22,7 +22,7 @@
   import DCLink from '../../Controls/DCLink.vue';
 
   export default {
-    name: 'SrcLocation',
+    name: 'src-location',
     components: { DCLink },
     props: {
       locations: { type: Array, default: () => ([]) }

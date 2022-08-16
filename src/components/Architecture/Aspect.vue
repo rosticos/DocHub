@@ -72,7 +72,7 @@
   import SrcLocations from './tabs/SrcLocations.vue';
 
   export default {
-    name: 'Aspect',
+    name: 'aspect',
     components: {
       Docs,
       AspectsMindmap,

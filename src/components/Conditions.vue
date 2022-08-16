@@ -28,7 +28,7 @@
   import SourceSelector from './SourceSelector';
 
   export default {
-    name: 'Swagger',
+    name: 'swagger',
     components: {
       SourceSelector
     },

@@ -35,7 +35,7 @@ window.addEventListener('scroll', () => {
 */
 
   export default {
-    name: 'Anchor',
+    name: 'anchor',
     props: {
       id: { type: String, default: '' }
     },

@@ -27,7 +27,7 @@
   import Mixin from '../mixin';
 
   export default {
-    name: 'Validators',
+    name: 'validators',
     components: {
       Tree
     },

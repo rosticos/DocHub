@@ -17,7 +17,7 @@
   import ProblemBlank from './tabs/ProblemBlank.vue';
 
   export default {
-    name: 'Problems',
+    name: 'problems',
     components: {
       Validators,
       ProblemBlank

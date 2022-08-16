@@ -7,7 +7,7 @@
   import TreeItem from './TreeItem';
 
   export default {
-    name: 'Tree',
+    name: 'tree',
     components: {
       TreeItem
     },
